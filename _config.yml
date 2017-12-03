@@ -1,0 +1,62 @@
+# Site settings
+title: bill thompson
+
+email: biltho[at]mpi.nl
+
+description: > # this means to ignore newlines until "baseurl:"
+  Here's my description.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+url: '' # the base hostname & protocol for your site
+
+twitter_username: billdthompson
+github_username:  billdthompson
+
+# Build settings
+markdown: kramdown
+
+theme: jekyll-theme-primer
+
+plugins: ['jekyll/scholar', 'jemoji']
+
+scholar:
+  style: apa
+  source:
+    ./_bibliography
+  bibliography:
+    my-papers.bib
+  bibliography_template: 
+    bibstyle
+  repository:
+    ./assets/output
+  bibtex_filters: 
+    latex
+
+# social icons and sharing options
+social:
+  - icon: envelope
+    url:  mailto:biltho@mpi.nl
+    desc: email me
+    nonfinal: x
+
+  - icon: twitter
+    url:  https://twitter.com/billdthompson
+    desc: Follow me on twitter
+    nonfinal: x
+
+  - icon: github
+    url:  https://github.com/billdthompson
+    desc: Fork me on github
+    nonfinal: x
+
+  - icon: bitbucket
+    url:  https://bitbucket.org/billthompson/
+    desc: Fork me on bitbucket
+    
+
+
+
+
+
+

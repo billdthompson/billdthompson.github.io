@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div align="center"><img src="{{site.baseurl}}/assets/images/bill_copenhagen.png" alt="photo credit: Heikki Rasilo" style="width: 400px;"/></div>
+
+  <div align="center">
+  <p></p>
+  {% for social in site.social %}
+    {% if social.url %}
+        <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}" style="color: #ccc; font-size: small">
+          <i class="fa fa-{{ social.icon }}"></i>
+        </a>
+    {% endif %}
+    {% if social.nonfinal %}
+       &nbsp;&nbsp;·&nbsp;&nbsp;
+    {% endif %}
+  {% endfor %}
+  </div>
+
+  <div align="center" class = "site-description"> 
+  I'm a cognitive scientist studying the computational foundations of human behaviour, specialising in language and the evolutionary processes that make it possible.
+
+  <br/>
+  <br/>
+
+  I am currently a visiting postdoc in the <a href="http://www.mpi.nl/departments/language-and-cognition"> Language and Cognition</a> department at the <a href = "http://www.mpi.nl/"> Max Planck Institute for Psycholinguistics</a> and a member of the <a href = "https://ai.vub.ac.be/"> Artificial Intelligence Laboratory</a> at the <a href = "https://www.vub.ac.be/en/">Free University of Brussels (VUB) </a>.
+  </div>
+
+  <h1 class="page-heading">output:</h1>
+
+  {% bibliography %}
+
+</div>

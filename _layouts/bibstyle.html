@@ -1,0 +1,79 @@
+---
+---
+
+
+<!--- Style formatting goes here -->
+<style>
+
+bibtitle {
+	font-size: small;
+}
+
+bibvenue {
+	font-style: italic;
+	font-size: small;
+}
+
+bibauthors {
+	font-size: small;
+}
+</style>
+
+
+<!--- reference formatting goes here -->
+
+{% if entry.pending%}
+	<ul>
+    <bibtitle>
+	<a href="{{links.pdf}}">[pending] {{ entry.title }}</a>
+	</bibtitle>
+
+	<br/>
+
+	<bibauthors>
+		by {{entry.author}} ({{entry.year}})
+	</bibauthors> 
+
+	<br/>
+
+	<bibvenue>
+	{{ entry.status}} {{entry.pending}}
+	<br/>
+	</bibvenue>
+	
+	<p></p>
+	</ul>
+
+{% else %}
+	<ul>
+    <bibtitle>
+	<a href="{{links.pdf}}">{{ entry.title }}</a>
+	</bibtitle>
+
+	<br/>
+
+	<bibauthors>
+	by {{entry.author}} ({{entry.year}})
+	</bibauthors> 
+
+	<br/>
+
+	{% if entry.journal %}
+	<bibvenue>
+	{{ entry.journal }}, {{entry.doi}}
+	<br/>
+	</bibvenue>
+	{% endif %}
+
+	{% if entry.booktitle %}
+	<bibvenue>
+	{{ entry.booktitle }}, {{entry.doi}}
+	<br/>
+	</bibvenue>
+	{% endif %}
+	
+	<p></p>
+	</ul>
+{% endif %}
+
+
