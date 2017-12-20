@@ -151,9 +151,12 @@ pre {
   position: relative; }
 
 .site-title {
-  font-size: 22px;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-variant: small-caps;
+  font-size: 26px;
+  font-weight: 900;
   line-height: 56px;
+  text-align: center;
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
@@ -173,7 +176,12 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-variant: small-caps;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
