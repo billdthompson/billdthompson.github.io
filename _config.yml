@@ -36,7 +36,7 @@ scholar:
 # social icons and sharing options
 social:
   - icon: envelope
-    url:  mailto:biltho@mpi.nl
+    url:  mailto:bill@billdthompson.info
     desc: email me
     nonfinal: x
 
