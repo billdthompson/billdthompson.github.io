@@ -16,8 +16,6 @@ github_username:  billdthompson
 # Build settings
 markdown: kramdown
 
-theme: jekyll-theme-primer
-
 plugins: ['jekyll/scholar', 'jemoji']
 
 scholar:
@@ -49,10 +47,6 @@ social:
     url:  https://github.com/billdthompson
     desc: Fork me on github
     nonfinal: x
-
-  - icon: bitbucket
-    url:  https://bitbucket.org/billthompson/
-    desc: Fork me on bitbucket
     
 
 
