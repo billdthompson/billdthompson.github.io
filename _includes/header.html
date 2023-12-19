@@ -1,8 +1,26 @@
+<style type="text/css">
+.flag {
+  width: 7%;
+  height:40px;
+}
+
+.flag.progress {
+  background:
+    conic-gradient(at 14% 50%, #0000 221.25deg, white 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 23% 50%, #0000 221.25deg, #ffa6b9 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 32% 50%, #0000 221.25deg, #00d2ff 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 41% 50%, #0000 221.25deg, #753000 222deg 318deg, #0000 318.25deg),
+    conic-gradient(at 50% 50%, #0000 221.25deg, black 222deg 318deg, #0000 318.25deg),
+    linear-gradient(red 0 16.66%, orange 0 33.33%, yellow 0 50%, green 0 66.66%, blue 0 83.33%, indigo 0);
+}
+
+</style>
 
     <header>
 
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+        <div class="flag progress" role="img" aria-label="Progress Pride Flag. The traditional gay pride flag with 6 bars: red, orange, yellow, green, blue, and indigo. On the left side, it has triangles of color: white, pink, light blue, brown, and black."></div>
         <div class="container">
           {% if page.permalink != '/' -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">

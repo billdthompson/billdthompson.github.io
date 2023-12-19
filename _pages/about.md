@@ -1,26 +1,27 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Is there a subtitle?
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: wdt-profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+    <p>wdt@berkeley.edu</p><br>
+    <p>2121 Berkeley Way, Berkeley, California</p>
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an Assistant Professor at the [University of California, Berkeley](https://www.berkeley.edu/), where I direct the [Computational Cognitive Science Laboratory](https://www.berkeley.edu/). I am Faculty in the [Department of Psychology](https://psychology.berkeley.edu/), the [Program in Cognitive Science](https://cogsci.berkeley.edu/), and Berkeley's new [Masters in Computational Social Science](https://macss.berkeley.edu/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research examines human cognition from a computational perspective, combining experimental psychology with machine learning and cognitive modeling to address basic questions about human learning and reasoning. I am particularly interested in the computational problems that arise in multi-agent intelligence and the solutions that human minds and societies have discovered: language, social cognition, and cultural evolution. You can learn more about my work [in this recent essay](https://www.science.org/doi/10.1126/science.ade3128).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In Spring 2024 I will lead a graduate seminar on [Large Language Models and Cognitive Science](https://github.com/ccs-ucb/llms-cogsci). I was incredibly fortunate to win the [2022 NOMIS and Science Magazine Young Explorer Award](https://nomisfoundation.ch/research/awards/nomis-science-and-young-explorer-award/). 
+
+Prior to UC Berkeley, I was a postdoc in the [Department of Computer Science at Princeton University](https://www.cs.princeton.edu/), working with [Tom Griffiths](https://cocosci.princeton.edu/tom/index.php). I did my PhD at the [University of Edinburgh](https://www.ed.ac.uk/ppls), working with [Simon Kirby](https://www.simonkirby.net/) and [Kenny Smith](http://www.lel.ed.ac.uk/~kenny/).
+
