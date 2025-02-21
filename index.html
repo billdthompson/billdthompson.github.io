@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill D. Thompson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <script>
+        function toggleContent() {
+            let mainContent = document.getElementById('main-content');
+            let fullText = document.getElementById('full-text');
+            let toggleBtn = document.getElementById('toggle-btn');
+
+            if (mainContent.style.display === "none") {
+                mainContent.style.display = "block";
+                fullText.style.display = "none";
+                toggleBtn.innerText = "More Info";
+            } else {
+                mainContent.style.display = "none";
+                fullText.style.display = "block";
+                toggleBtn.innerText = "Back";
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-center d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="container">
+        <!-- Initial Content (Photo & Blurb) -->
+        <div id="main-content">
+            <img src="wdt.png" alt="Bill Thompson" class="profile-img">
+            <h4 class="fw-bold mt-1">Bill Thompson</h4>
+            <a href="mailto:wdt@berkeley.edu">wdt@berkeley.edu</a><br>
+            <a href="https://scholar.google.com/citations?hl=en&user=vOHeGXcAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
+            <hr>
+            <p>
+                I am an Assistant Professor at the 
+                <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>, 
+                where I direct the 
+                <a href="https://ccs-ucb.github.io/" target="_blank">Computational Cognitive Science Laboratory</a>. 
+                You can learn more about my work in
+                <a href="https://www.science.org/doi/10.1126/science.ade3128" target="_blank">this recent essay</a> or these representative papers:
+
+                <a href="https://www.science.org/doi/10.1126/science.abn0915" style="color: #004AAE;">Complex cognitive algorithms preserved by selective social learning in experimental populations</a>, 
+                <a href="https://osf.io/preprints/psyarxiv/qe6bp_v1" style="color: #FDB515;">People balance joint reward, fairness and complexity to develop social norms in a two-player game</a>, 
+                <a href="https://www.nature.com/articles/s41562-020-0924-8" style="color: #E7115E;">Cultural influences on word meanings revealed through large-scale semantic alignment</a>, 
+                <a href="https://www.nature.com/articles/s41562-023-01715-5" style="color: #8236C7;">Resampling reduces bias amplification in experimental social networks</a>, 
+                <a href="https://www.nature.com/articles/s41562-023-01715-5" style="color: #018943;">Hidden Differences in Phenomenal Experience</a>.
+
+            </p>
+        </div>
+
+        <!-- Full Text (Initially Hidden) -->
+        <div id="full-text" style="display: none;">
+
+            <div><iframe frameborder="0" width="50%" height="400px" src="https://www.youtube.com/embed/u0kkqCNWnOM" allowfullscreen></iframe></div>
+            <br>
+            <p>
+                I am Faculty in the 
+                <a href="https://psychology.berkeley.edu/" target="_blank">Department of Psychology</a>, 
+                the <a href="https://cogsci.berkeley.edu/" target="_blank">Program in Cognitive Science</a>, 
+                and Berkeley's new 
+                <a href="https://macss.berkeley.edu/" target="_blank">Masters in Computational Social Science</a>.
+            </p>
+
+            <p>
+                My research examines human cognition from a computational perspective, 
+                combining experimental psychology with machine learning and cognitive modeling 
+                to address basic questions about human learning and reasoning. I am particularly 
+                interested in the computational problems that arise in multi-agent intelligence 
+                and the solutions that human minds and societies have discovered: language, 
+                social cognition, and cultural evolution. I am also interested in the application of cognitive science
+                to related problems in artificial intelligence.
+            </p>
+
+            <p>
+                I am currently teaching a new graduate seminar on Social Cognition. 
+                In Spring 2024, I taught a graduate seminar on 
+                <a href="https://github.com/ccs-ucb/llms-cogsci" target="_blank">Large Language Models and Cognitive Science</a>. 
+                In Spring 2023, I taught 
+                <a href="https://github.com/ccs-ucb/290Q" target="_blank">Online experiments for psychologists</a>. I teach a large undergraduate class called Basic Issues in Cognition.        
+                I was incredibly fortunate to win the 
+                <a href="https://nomisfoundation.ch/research/awards/nomis-science-and-young-explorer-award/" target="_blank">
+                    2022 NOMIS and Science Magazine Young Explorer Award
+                </a>.
+            </p>
+
+
+            <p>
+                Prior to UC Berkeley, I was a postdoc in the 
+                <a href="https://www.cs.princeton.edu/" target="_blank">Department of Computer Science at Princeton University</a>, 
+                working with 
+                <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Tom Griffiths</a>. 
+                I did my PhD at the 
+                <a href="https://www.ed.ac.uk/ppls" target="_blank">University of Edinburgh</a>, 
+                working with 
+                <a href="https://www.simonkirby.net/" target="_blank">Simon Kirby</a> 
+                and 
+                <a href="http://www.lel.ed.ac.uk/~kenny/" target="_blank">Kenny Smith</a>.
+            </p>
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="toggle-btn" class="btn btn-outline-primary mt-3" onclick="toggleContent()">More information</button>
+    </div>
+</body>
+</html>
